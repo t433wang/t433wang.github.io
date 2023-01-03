@@ -50,6 +50,32 @@
         </nav>
       </div>
     </header>
+    <main> 
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <div class="carousel-indicators">
+          <button type="button" data-target="#myCarousel" data-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-target="#myCarousel" data-slide-to="1"></button>
+          <button type="button" data-target="#myCarousel" data-slide-to="2"></button>
+          <button type="button" data-target="#myCarousel" data-slide-to="3"></button>
+          <button type="button" data-target="#myCarousel" data-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner" style="height:512px;">
+          <div class="carousel-item active">
+            <svg class="bd-placehoder-img" style="background-image:url('images/screenshot.png');"></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1> CS488 Project: Ray Tracer</h1>
+                <p>A ray traver written in C++ that render scenes with a Lua file. Written for CS488 Computer Graphics in University of Waterloo</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placehoder-img" style="background-image:url('images/map_moon.png');"></svg>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 
 </html>
