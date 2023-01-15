@@ -230,7 +230,7 @@
                     src="images/refraction1_1.png"></img>
                   <div class="container">
                     <div class="carousel-caption d-none d-md-block">
-                      <p>Refract coefficient: 1.2</p>
+                      <p>Refract coefficient: 1.1</p>
                     </div>
                   </div>
                 </div>
@@ -297,6 +297,56 @@
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#glossyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHONG SHADER -->
+        <hr class="featurette-divider">
+        <div id="PHONG" class="row featurette">
+          <div class="col-md-7">
+            <h3 class="featurette-heading">Phong Shader</h3>
+            <li>Use Snell's Law to calculate the direction of refracted ray</li>
+            <li>Recursively trace the refracted ray</li>
+            <li>Blend the color from refraction and reflection by Fresnel's Law</li>
+          </div>
+          <div class="col-md-5">
+            <div id="refractCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#refractCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true"></button>
+                <button type="button" data-bs-target="#refractCarousel" data-bs-slide-to="1"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto"
+                    src="images/refraction1_1.png"></img>
+                  <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Refract coefficient: 1.1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto"
+                    src="images/refraction1_0.png"></img>
+                  <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Refract coefficient: 1.0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#refractCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#refractCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
