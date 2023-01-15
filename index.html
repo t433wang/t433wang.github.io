@@ -103,13 +103,13 @@
         <div id="objectives">
           <h2 class="featurette-heading">Objectives</h2>
           <p class="lead">
-          Objectives for this project include</p>
+            Objectives for this project include</p>
           <li>Anti-Alias</li>
           <li>Soft Shadow</li>
           <li>Refraction</li>
           <li>Glossy Reflection</li>
           <li>Phong Shading</li>
-          <li>Texture Mapping</li>  
+          <li>Texture Mapping</li>
           <li>CSG</li>
           <li>Multi-Threading</li>
         </div>
@@ -119,13 +119,7 @@
         <!-- ANTI ALIAS -->
         <hr class="featurette-divider">
         <div id="AA" class="row featurette">
-          <div class="col-md-7">
-            <h3 class="featurette-heading">Anti-Alias</h3>
-            <p class="lead">Emit 20 rays for each pixel, each ray is in the range of a pixel</p>
-            <p>Use Stochastic sampling to randomize the direction</p>
-            <p>Return the average colour of the 20 rays</p>
-          </div>
-          <div class="col-md-5">
+          <div class="col-md-4">
             <div id="aaCarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#aaCarousel" data-bs-slide-to="0" class="active"
@@ -134,20 +128,20 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/aa.png"></img>
-                  <div class="container">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>20x Anti-Alias</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
                   <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/no_aa.png"></img>
                   <div class="container">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>No Anti-Alias</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>No Anti-Alias</p>
+                    </div>
                   </div>
-                </div>
+                  <div class="carousel-item">
+                    <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/aa.png"></img>
+                    <div class="container">
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>20x Anti-Alias</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#aaCarousel" data-bs-slide="prev">
@@ -160,18 +154,24 @@
               </button>
             </div>
           </div>
+          <div class="col-md-7">
+            <h3 class="featurette-heading">Anti-Alias</h3>
+            <p class="lead">Emit 20 rays for each pixel, each ray is in the range of a pixel</p>
+            <p>Use Stochastic sampling to randomize the direction</p>
+            <p>Return the average colour of the 20 rays</p>
+          </div>
         </div>
 
         <!-- SOFT SHADOW -->
         <hr class="featurette-divider">
         <div id="SS" class="row featurette">
-          <div class="col-md-7">
+          <div class="col-md-7 order-md-2">
             <h3 class="featurette-heading">Soft Shadowing</h3>
             <li>Randomly sample the points on the area light source</li>
             <li>Render hard shadows</li>
             <li>Sum up and averaging the shadow contributions</li>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 order-md-1">
             <div id="ssCarousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#ssCarousel" data-bs-slide-to="0" class="active"
@@ -190,10 +190,10 @@
                 <div class="carousel-item">
                   <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/hier.png"></img>
                   <div class="container">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>No Soft Shadow</p>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>No Soft Shadow</p>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#ssCarousel" data-bs-slide="prev">
@@ -226,27 +226,31 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/refraction1_0.png"></img>
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto"
+                    src="images/refraction1_1.png"></img>
+                  <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Refract coefficient: 1.2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto"
+                    src="images/refraction1_0.png"></img>
                   <div class="container">
                     <div class="carousel-caption d-none d-md-block">
                       <p>Refract coefficient: 1.0</p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/refraction1_1.png"></img>
-                  <div class="container">
-                  <div class="carousel-caption d-none d-md-block">
-                    <p>Refract coefficient: 1.2</p>
-                  </div>
-                </div>
-                </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#refractCarousel" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#refractCarousel"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#refractCarousel" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#refractCarousel"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -254,50 +258,51 @@
           </div>
         </div>
 
-         <!-- GLOSSY REFLECTION -->
-         <hr class="featurette-divider">
-         <div id="GR" class="row featurette">
-           <div class="col-md-7">
-             <h3 class="featurette-heading">Glossy Reflection</h3>
-             <li>Randomly create r', which is the perturbation from reflection ray r, using a uniform distribution</li>
-             <li>Average colors of the sampled r'</li>
-           </div>
-           <div class="col-md-5">
-             <div id="glossyCarousel" class="carousel slide" data-ride="carousel">
-               <div class="carousel-indicators">
-                 <button type="button" data-bs-target="#glossyCarousel" data-bs-slide-to="0" class="active"
-                   aria-current="true"></button>
-                 <button type="button" data-bs-target="#glossyCarousel" data-bs-slide-to="1"></button>
-               </div>
-               <div class="carousel-inner">
-                 <div class="carousel-item active">
-                   <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/mirror.png"></img>
-                   <div class="container">
-                     <div class="carousel-caption d-none d-md-block">
-                       <p>Mirror Reflection</p>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="carousel-item">
-                   <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/glossy_mirror.png"></img>
-                   <div class="container">
-                   <div class="carousel-caption d-none d-md-block">
-                     <p>Glossy Reflection</p>
-                   </div>
-                 </div>
-                 </div>
-               </div>
-               <button class="carousel-control-prev" type="button" data-bs-target="#glossyCarousel" data-bs-slide="prev">
-                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Previous</span>
-               </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#glossyCarousel" data-bs-slide="next">
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Next</span>
-               </button>
-             </div>
-           </div>
-         </div>
+        <!-- GLOSSY REFLECTION -->
+        <hr class="featurette-divider">
+        <div id="GR" class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h3 class="featurette-heading">Glossy Reflection</h3>
+            <li>Randomly create r', which is the perturbation from reflection ray r, using a uniform distribution</li>
+            <li>Average colors of the sampled r'</li>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div id="glossyCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#glossyCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true"></button>
+                <button type="button" data-bs-target="#glossyCarousel" data-bs-slide-to="1"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto" src="images/mirror.png"></img>
+                  <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Mirror Reflection</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img img-fluid" width="auto" height="auto"
+                    src="images/glossy_mirror.png"></img>
+                  <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Glossy Reflection</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#glossyCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#glossyCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <hr class="featurette-divider">
 
